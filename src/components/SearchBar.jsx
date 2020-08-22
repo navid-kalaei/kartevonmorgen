@@ -36,7 +36,7 @@ class SearchBar extends React.Component {
 
   render() {
 
-    const { categories, disabled, toggleCat, searchText, t, loading, fixedTagsStr } = this.props;
+    const { categories, disabled, toggleCat, searchText, t, loading, fixedTagsStr, categoryChooser } = this.props;
 
 
     return (
