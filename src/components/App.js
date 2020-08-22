@@ -368,14 +368,6 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-// Create the keyframes
-const fadein = keyframes`
-  from { opacity: 0; }
-  to { opacity: 1; }
-`
-
-import pincloud from "../img/pincloud.png";
-
 const MenuFontAwesomeIcon = styled(FontAwesomeIcon)`
   padding-right: .45rem;
 `;
