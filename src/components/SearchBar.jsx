@@ -36,7 +36,7 @@ class SearchBar extends React.Component {
 
   render() {
 
-    const { categoryChooser, categories, disabled, toggleCat, searchText, t, loading } = this.props;
+    const { categories, disabled, toggleCat, searchText, t, loading, fixedTagsStr } = this.props;
 
 
     return (
@@ -78,6 +78,7 @@ class SearchBar extends React.Component {
             }}
             onChange    = { this.props.onChange }
             searchText       = { searchText || '' }
+            fixedTagsStr = {fixedTagsStr}
           />
         </div>
       </Bar>)
@@ -87,6 +88,7 @@ class SearchBar extends React.Component {
 SearchBar.propTypes = {
   type        : T.oneOf(["standalone","integrated",""]),
   searchText  : T.string,
+  fixedTagsStr: T.string,
   categories  : T.array,
   disabled    : T.bool,
   toggleCat   : T.func,
